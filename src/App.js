@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { getCategories, getProductsFromCategoryAndQuery } from './services/api';
 import { SearchBar, Carrinho, LinkParaCarrinho,
   CategoriesContainer } from './Componentes/index';
-import ListProducts from './Componentes/ListProducts';
 import ProductDetails from './Componentes/ProductDetails';
+import ListProducts from './Componentes/ListProducts';
 
 class App extends React.Component {
   constructor() {
