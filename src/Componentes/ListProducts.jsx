@@ -16,7 +16,8 @@ class ListProducts extends React.Component {
     const { products, onClick } = this.props;
 
     return (
-      <div>
+      <div className="titleP">
+
         <p>Produtos</p>
 
         <section
@@ -25,6 +26,7 @@ class ListProducts extends React.Component {
           {products
             .map((obj) => (
               <ProductCard
+                className="produto"
                 key={ obj.id }
                 product={ obj }
                 onClick={ onClick }

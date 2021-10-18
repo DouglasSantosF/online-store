@@ -4,3 +4,10 @@
   margin: 0 auto;
   width: auto;
 }
+
+.titleP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+}
