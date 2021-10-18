@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import {
+/* import {
   MDBBtn,
 
-} from 'mdb-react-ui-kit';
+} from 'mdb-react-ui-kit'; */
 import './ProductCard.css';
 
 class Categories extends React.Component {
@@ -14,17 +14,18 @@ class Categories extends React.Component {
     };
     return (
       <label htmlFor="category" id="label-category-btn">
-        <MDBBtn
+        <button
+          className="btn btn-primary mb-1"
           onClick={ (e) => handleClick(e) }
           data-testid="category"
           name="category"
-          type="radio"
+          type="button"
           id={ id }
           value={ category }
           style={ buttomCss }
         >
           { category }
-        </MDBBtn>
+        </button>
       </label>
     );
   }
