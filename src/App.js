@@ -93,7 +93,7 @@ class App extends React.Component {
               path="/"
               render={ () => (
                 <div className="App">
-                  <div className="search-cart">
+                  <div className="search-cart p-4">
                     <p data-testid="home-initial-message">
                       Digite algum termo de pesquisa ou escolha uma categoria.
                     </p>
@@ -102,6 +102,7 @@ class App extends React.Component {
                       value={ search }
                     />
                     <button
+                      className="btn btn-info"
                       data-testid="query-button"
                       type="submit"
                       onClick={

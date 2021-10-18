@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 class BotoesDosProdutos extends React.Component {
   render() {
     const { NumberOfItems, onClickIncress, onClickDecress, funcRemover, id } = this.props;
-    // console.log(funcRemover('MLB46839461389'));
 
     return (
       <div className="containerButtons">
