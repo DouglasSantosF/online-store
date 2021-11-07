@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FreteComponent, Valuetion, LinkParaCarrinho } from './index';
+import './ProductDetails.css';
 
 class ProductDetails extends React.Component {
   constructor(props) {
@@ -34,32 +35,33 @@ class ProductDetails extends React.Component {
     const { quantidadeTotal, productTest: { title, thumbnail, price, domainId, shipping:
       { free_shipping: frete } } } = this.state;
     return (
-      <div>
+      <div className="countainerDetails">
         <LinkParaCarrinho view={ quantidadeTotal } />
-
-        <h4
-          data-testid="product-detail-name"
-          className="nameDetails"
-        >
-          {title}
-          nome
-        </h4>
-        <h4
-          className="priceDetails"
-        >
-          {price}
-
-        </h4>
-        <FreteComponent frete={ frete } />
-        <img alt="ImageProduct" className="imageDetails" src={ thumbnail } />
-
-        <div>
-          <h4 className="especDetails">
-            { domainId }
+        <div className="cardProduct">
+          <h4
+            data-testid="product-detail-name"
+            className="nameDetails"
+          >
+            {title}
+            nome
+          </h4>
+          <h4
+            className="priceDetails"
+          >
+            {`R$ ${price}`}
 
           </h4>
+          <FreteComponent frete={ frete } />
+          <img alt="ImageProduct" className="imageDetails" src={ thumbnail } />
+
+          <div>
+            <h4 className="especDetails">
+              { domainId }
+
+            </h4>
+          </div>
+          <Valuetion />
         </div>
-        <Valuetion />
       </div>
     );
   }

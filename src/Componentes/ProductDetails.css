@@ -1,0 +1,26 @@
+.cardProduct {
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  background-color: rgb(13, 17, 23);
+  color: white
+}
+
+.imageDetails {
+  width: 400px;
+}
+
+.countainerDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(53, 168, 221);
+}
+
+.carrinhoDetails {
+  margin-left: 100px;
+}
