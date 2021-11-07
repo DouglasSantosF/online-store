@@ -36,7 +36,9 @@ class ProductDetails extends React.Component {
       { free_shipping: frete } } } = this.state;
     return (
       <div className="countainerDetails">
-        <LinkParaCarrinho view={ quantidadeTotal } />
+        <div className="carrinhoDetails">
+          <LinkParaCarrinho view={ quantidadeTotal } />
+        </div>
         <div className="cardProduct">
           <h4
             data-testid="product-detail-name"
