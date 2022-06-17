@@ -48,8 +48,7 @@ Também testamos nossos conhecimentos em estilização, algumas estilizações i
 ## Exemplo
 ---
 
-<img src="./index.png" width="800"></img>
-<img src="./card-details.png" width="500"></img>
+
 
 
 ## Baixando o projeto
