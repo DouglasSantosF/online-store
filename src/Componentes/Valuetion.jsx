@@ -1,6 +1,6 @@
 import StarsRating from 'stars-rating';
 import React from 'react';
-// import { render } from 'react-dom';
+import { Link } from 'react-router-dom';
 
 class Valuetion extends React.Component {
   constructor() {
@@ -40,8 +40,11 @@ class Valuetion extends React.Component {
           data-testid="product-detail-evaluation"
         />
         <br />
-
-        <button type="submit">button</button>
+        <Link
+          to="/"
+        >
+          <button type="submit">Comment</button>
+        </Link>
       </form>
     );
   }
