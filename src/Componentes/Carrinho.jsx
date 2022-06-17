@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductCartCard from './ProductCartCard';
 import './Carrinho.css';
 import imagem from './unnamed.gif';
@@ -45,6 +46,12 @@ class Carrinho extends React.Component {
         <div className="countainer-empty-cart">
           <p data-testid="shopping-cart-empty-message">Seu carrinho está vazio</p>
           <img className="imagem-cart" src={ imagem } alt="carrinho-vazio" />
+          <Link
+            to="/"
+            className="buttonBack"
+          >
+            Voltar
+          </Link>
         </div>
       );
     }

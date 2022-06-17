@@ -45,11 +45,6 @@ Também testamos nossos conhecimentos em estilização, algumas estilizações i
 <br>
 <br>
 
-## Exemplo
----
-
-
-
 
 ## Baixando o projeto
 ---

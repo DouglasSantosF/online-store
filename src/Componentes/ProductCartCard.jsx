@@ -32,6 +32,7 @@ class ProductCartCard extends React.Component {
   render() {
     const { NumberOfItems } = this.state;
     const { product: { title, price, thumbnail, id }, funcRemover } = this.props;
+    console.log(id);
 
     return (
       <div
@@ -48,9 +49,10 @@ class ProductCartCard extends React.Component {
           </h5>
           <img src={ thumbnail } alt={ `Imagem do produto${title}` } width="100px" />
           <Link
+            style={ { marginTop: '5px' } }
             className="btn btn-outline-primary"
             data-testid="product-detail-link"
-            to={ `/${title}/details` }
+            to={ { pathname: '/' } }
           >
             Ver detalhes
           </Link>
